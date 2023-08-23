@@ -1,0 +1,66 @@
+---
+title: "Quarto tutorial template"
+author: 
+	- name: "Jason Grafmiller"
+		email: "j.grafmiller@bham.ac.uk"
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+format:
+  html: 
+    toc: true
+    toc-location: left
+    theme: 
+      light: flatly
+      dark: darkly
+    mainfont: 'Roboto'
+    fontsize: 100%
+    code-copy: true
+    code-tools:
+      source: true
+      toggle: true
+      caption: "code"
+    css: custom_bib.css
+    include-in-header: roboto_serif.html
+    include-after-body: footer.html
+	embed-resources: true
+keywords: 
+  - keyword1
+  - keyword2
+knitr:
+  opts_chunk: 
+    comment: "#"
+    tidy: styler
+execute:
+  echo: true
+  warning: false
+  message: false
+  cache: false
+tbl-cap-location: top
+fig-cap-location: bottom
+filters:
+  - lightbox
+lightbox: auto
+bibliography: ["data_skills_refs.bib"]
+link-citations: true
+csl: unified-style-linguistics.csl
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this 
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
