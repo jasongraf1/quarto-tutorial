@@ -1,8 +1,6 @@
 ---
 title: "Quarto tutorial template"
-author: 
-	- name: "Jason Grafmiller"
-		email: "j.grafmiller@bham.ac.uk"
+author: "Jason Grafmiller<br>[j.grafmiller@bham.ac.uk](mailto:j.grafmiller@bham.ac.uk)"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 format:
   html: 
@@ -21,7 +19,7 @@ format:
     css: custom_bib.css
     include-in-header: roboto_serif.html
     include-after-body: footer.html
-	embed-resources: true
+    embed-resources: true
 keywords: 
   - keyword1
   - keyword2
